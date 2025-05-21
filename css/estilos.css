@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    min-height: 10px;
+    margin: 0;
+    padding: 30px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-left img {
+    height: 40px;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.navbar-center a {
+    color: rgb(17, 36, 156);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-center a:hover {
+    color: #FFD700;
+}
+
+.imgo {
+    width: 100%;
+    margin: 20px auto 0; 
+    padding: 0;
+    overflow: hidden; 
+}
+
+.imgo img {
+    width: 100%;
+    max-height: 400px; /* Limit the height to a reasonable value (adjust as needed) */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 2px solid #6F1E2A;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+main div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 28px;
+    color: #6F1E2A;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mision-vision-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mision,
+.vision {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    color: #6F1E2A;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 150px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-left {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .navbar-left img {
+        height: 30px;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .imgo img {
+        max-height: 300px; /* Reduce height further on mobile */
+    }
+
+    .mision-vision-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mision,
+    .vision {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+#carreras {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgcarrera {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+section div {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 18px;
+    color: #b22222;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    #carreras {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.content h2, .content h3 {
+    font-size: 20px;
+    color: #b22222;
+    margin: 15px 0 5px;
+}
+
+.content a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #750505;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+footer p {
+    color: #f9f9f9;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 24px;
+        top: 15%;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content h2, .content h3 {
+        font-size: 18px;
+    }
+}
+
+.about-highlights {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+.highlight {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 15px;
+    align-items: start;
+    flex: 1;
+}
+
+.highlight-icon {
+    background-color: #C83A31;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: bold;
+    grid-row: 1 / span 2;
+}
+
+.highlight h3 {
+    grid-column: 2;
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.3;
+}
+
+.highlight p {
+    grid-column: 2;
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+section {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.serviimg {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.imgser {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button{
+    background-color: #6F1E2A;
+    color: #f9f9f9;
+}
